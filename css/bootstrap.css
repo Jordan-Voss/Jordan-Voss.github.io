@@ -178,7 +178,7 @@ button:-moz-focusring,
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  /* padding: 0.35em 0.625em 0.75em; */
 }
 
 legend {
@@ -332,7 +332,7 @@ html {
 }
 
 html {
-  -ms-overflow-style: scrollbar;
+  /* -ms-overflow-style: scrollbar; */
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -349,7 +349,7 @@ body {
   outline: none !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6{
   margin-top: 0;
   margin-bottom: .5rem;
 }
@@ -771,7 +771,7 @@ pre code {
 
 @media (min-width: 768px) {
   .container {
-    padding-right: 15px;
+    /* padding-right: 15px; */
     padding-left: 15px;
   }
 }
@@ -792,21 +792,21 @@ pre code {
 
 @media (min-width: 576px) {
   .container {
-    width: 540px;
+    /* width: 540px; */
     max-width: 100%;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 720px;
+    /* width: 720px; */
     max-width: 100%;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    width: 960px;
+    /* width: 960px; */
     max-width: 100%;
   }
 }
@@ -835,7 +835,7 @@ pre code {
 
 @media (min-width: 768px) {
   .container-fluid {
-    padding-right: 15px;
+    /* padding-right: 15px; */
     padding-left: 15px;
   }
 }
@@ -871,27 +871,51 @@ pre code {
     margin-right: -15px;
     margin-left: -15px;
   }
-}
+  .row .col-sm-8{
+    justify-content: center;
+    left: 20%;
+    right:10%
+  }
+  
+  }
+
 
 @media (min-width: 768px) {
   .row {
-    margin-right: -15px;
-    margin-left: -15px;
+    /* padding-right: 7.5vw; */
+    width: 100vw;
   }
+
+.row .col-sm-8{
+  justify-content: center;
+  left: 20%;
+  /* right:10% */
+}
 }
 
 @media (min-width: 992px) {
   .row {
-    margin-right: -15px;
-    margin-left: -15px;
+    padding-right: 2vw;
+    width: 70vw;
   }
+}
+.row .col-sm-8{
+  justify-content: center;
+  left: 20%;
+  right:10%
+
 }
 
 @media (min-width: 1200px) {
   .row {
-    margin-right: -15px;
-    margin-left: -15px;
+    padding-right: 7.5vw;
+    width: 70vw;
   }
+}
+.row .col-sm-4{
+  /* justify-content: center; */
+  /* left: 20%; */
+  max-width: 33.33%;
 }
 
 .no-gutters {
@@ -1248,7 +1272,6 @@ pre code {
     -webkit-flex: 0 0 33.333333%;
         -ms-flex: 0 0 33.333333%;
             flex: 0 0 33.333333%;
-    max-width: 33.333333%;
   }
   .col-sm-5 {
     -webkit-box-flex: 0;
@@ -1262,7 +1285,7 @@ pre code {
     -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
-    max-width: 50%;
+    /* max-width: 50%; */
 
   }
   .col-sm-7 {
@@ -1278,6 +1301,7 @@ pre code {
         -ms-flex: 0 0 66.666667%;
             flex: 0 0 66.666667%;
     max-width: 66.666667%;
+
   }
   .col-sm-9 {
     -webkit-box-flex: 0;

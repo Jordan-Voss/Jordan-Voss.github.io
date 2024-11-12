@@ -19,67 +19,45 @@
 	<link href="css/ionicons.css" rel="stylesheet">
 
 	<link href="css/fluidbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/styles-specific.css" rel="stylesheet">
 
-	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/styles-general.css" rel="stylesheet">
+
+	<link href="css/responsive1.css" rel="stylesheet">
 
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="info">
+
+<!-- 
+	<header class="header">
+        <div class="header-container">
+            <div class="contact-info">
                 <i class="icon ion-ios-telephone-outline"></i>
                 <div class="right-area">
                     <h6><a href='tel:00353871484226'>0871484226</a></h6>
-                </div><!-- right-area -->
-            </div><!-- info -->
+                </div>
+            </div>
 
-            <div class="info">
+            <div class="contact-info">
                 <i class="icon ion-ios-chatboxes-outline"></i>
                 <div class="right-area">
                     <h5><a href='mailto:jordan@jordanvoss.online'>jordan@jordanvoss.online</a></h5>
-                </div><!-- right-area -->
-            </div><!-- info -->
-        </div><!-- container -->
-    </header>
+                </div>
+            </div>
+        </div>
+    </header> -->
 
     <div class="container-btn">
         <a class="downlad-btn" href="files/Document.pdf" download="Jordan-Voss-CV.pdf" target="_blank">Download My CV</a>
-    </div><!-- container -->
-	<!-- <header>
-		<div class="container">
-			<div class="heading-wrapper">
-				<div class="row">
-	
-					<div class="col-sm-6 col-md-6 col-lg-4">
-						<div class="info">
-							<i class="icon ion-ios-telephone-outline"></i>
-							<div class="right-area">
-								<h6><a href='tel:00353871484226'>0871484226</a></h6>
-							</div>
-						</div>
-					</div>
+    </div>
 
-					<div class="col-sm-6 col-md-6 col-lg-4">
-						<div class="info">
-							<i class="icon ion-ios-chatboxes-outline"></i>
-							<div class="right-area">
-								<h5><a href='mailto:jordan@jordanvoss.online'>jordan@jordanvoss.online</a></h5>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-				<a class="downlad-btn" href="files/Document.pdf" download="Jordan-Voss-CV.pdf" target="_blank">Download My CV</a>
-		</div>
-	</header> -->
 
 	<section class="intro-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-1 col-lg-2"></div>
+		<div class="container container-intro">
+			<div class="row row-intro">
+				<!-- <div class="col-md-1 col-lg-2"></div> -->
 				<div class="col-md-10 col-lg-8">
 					<div class="intro">
 						<div class="profile-img"><img src="images/J_V-15.jpeg"></div>
@@ -88,9 +66,8 @@
 						<h6 class="font-lite-black">BSC. In Computer Applications and Software Engineering from DCU graduating with a 2.1</h6>
 
 						<ul class="information margin-tb-30">
-							<li><b>BORN : </b>May 23, 1998</li>
-							<li><b>EMAIL : </b><a href="mailto:jordan@jordanvoss.online" target="_top">jordan@jordanvoss.online</a></li>
-						</ul>
+							<li><i class="fas fa-phone-alt"></i><a href='tel:00353871484226'>0871484226</a></li>
+							<li><i class="fas fa-envelope"></i> <a href="mailto:jordan@jordanvoss.online" target="_top">jordan@jordanvoss.online</a></li>
 						<ul class="social-icons">
 							<li class="social"><a href="https://github.com/Jordan-Voss"><i class="ion-social-github"></i></a></li>
 							<li class="social"><a href="https://www.linkedin.com/in/jordan-voss-1b179a178/"><i class="ion-social-linkedin"></i></a></li>
@@ -101,17 +78,17 @@
 		</div><!-- container -->
 	</section><!-- intro-section -->
 
-	<section class="experience-section section">
-		<div class="container">
-			<div class="row">
+	<section class="about-section section">
+		<div class="container container-about">
+			<div class="row row-about">
 				<div class="col-12">
-					<div class="heading">
+					<div class="about-header">
 						<h3><b>About me</b></h3>
-						<h6 class="font-lite-black"><b></b></h6>
+						<!-- <h6 class="font-lite-black"><b></b></h6> -->
 					</div>
 				</div><!-- col-12 -->
 			</div>
-			<div class="row">
+			<div class="row row-about">
 				<div class="col-sm-6">
 					<ul class="about-me-list">
 						<li class="margin-b-50">Hi there, my name is Jordan Voss and I am a 26-year-old Software Engineer currently working at Aviva. I have been with Aviva since March 2020, starting as an intern and now working full-time.</li>
@@ -130,134 +107,116 @@
 		</div>
 	</section>
 
-	<section class="education-section section">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-					<div class="heading">
-						<h3><b>Experience</b></h3>
-						<h6 class="font-lite-black"><b>ACADEMIC CAREER</b></h6></a>
-					</div>
-				</div><!-- col-sm-4 -->
-				<div class="col-sm-8">
-					<div class="education-wrapper">
-						<div class="education margin-b-50">
-							<h4><b>Started Computer Applications degree in DCU.</b></h4>
-							<h5 class="font-blue"><b>BSC in Computer Applications and Software Engineering.</b></h5>
-							<h6 class="font-lite-black margin-t-10">September 2017 - April 2018</h6>
-							<p class="margin-tb-30">In the first year of my degree we covered Core Introductory Hardware and Software Modules including Networks, Web Design and Programming(Python)</p>
-						</div><!-- education -->
-
-						<div class="education margin-b-50">
-							<h4><b>Second Year of CASE Degree.</b></h4>
-							<h5 class="font-blue"><b>BSC in Computer Applications and Software Engineering.</b></h5>
-							<h6 class="font-lite-black margin-t-10">September 2018 - April 2019</h6>
-							<p class="margin-tb-30">In the second year of my degree the primary focus was on Data Structures and Algorithms through Python and Object Oriented Programming through Java, aswell as an introduction to Databases and MySQL, Computer Architechtures and Software Testing. </p>
-						</div><!-- education -->
-
-						<div class="education margin-b-50">
-							<h4><b>Work Placement</b></h4>
-							<h5 class="font-blue"><b>Aviva</b></h5>
-							<h6 class="font-lite-black margin-t-10">March-September 2020</h6>
-							<p class="margin-tb-30">During my internship at Aviva I was introduced to many technologies including Spring Boot, Ansible and React. I was able to learn and progress quickly
-								during the course of the 6 month internship and eventually took on tasks by myself to complete. I worked mainly on the project ongoing at the time, updating the motor insurance and quotations
-								journey for the aviva website. I gained a lot of knowledge during this internship and improved on both hard skills and soft skills for working in the industry. I was able to 
-								work well as part of the team I was on, complete tasks assigned to me in good time and with good quality, assist in deploying to test and production environments, write unit, integration, end to end and
-								other types of testing. I learned also how to communicate in my daily standups on the progress I had made on my tasks, ask questions when needed and share knowledge on things I had learned to others.
-							</p>
-						</div><!-- education -->
-					</div><!-- education-wrapper -->
-				</div><!-- col-sm-8 -->
-			</div><!-- row -->
-		</div><!-- container -->
-
 	</section><!-- about-section -->
+	<section class="exp-section section">
+		<div class="col-12">
+			<div class="about-header">
+				<h3><b>Experience</b></h3>
+				<!-- <h6 class="font-lite-black"><b></b></h6> -->
+			</div>
+		<div class="experience-container">
 
 	
-	<section class="about-section section" style="background-color:#4C4E52;">
-		<div class="container" >
-	<div class="row">
-		<div class="col-sm-4">
-			<div class="heading">
-				<h3 style="color: #fff;"><b>Personal Projects</b></h3>
+			<div class="experience-card aviva-part-time-developer">
+				<h3 class="experience-title">Part-time Developer - Aviva Insurance Ireland</h3>
+				<p class="experience-date"><strong class="experience-strong">Jan 2021 - June 2021</strong></p>
+				<ul class="experience-details margin-tb-30">
+					<li>Developed and maintained microservices using Java, Spring Boot, and Maven, ensuring high-quality, scalable code for core business applications.</li>
+					<li>Collaborated with cross-functional teams to define, design, and ship new features.</li>
+					<li>Conducted code reviews and implemented best practices, improving code quality.</li>
+					<li>Participated in daily stand-ups and sprint planning, contributing to Agile workflows.</li>
+				</ul>
+			</div>
+
+			<div class="experience-card aviva-software-engineer">
+				<h3 class="experience-title">Software Engineer - Aviva Insurance Ireland</h3>
+				<p class="experience-date"><strong class="experience-strong">June 2021 - Present</strong></p>
+				<ul class="experience-details margin-tb-30">
+					<li>Developed and maintained microservices using Java, Spring Boot, and Maven, ensuring high-quality, scalable code for core business applications.</li>
+					<li>Collaborated with cross-functional teams to define, design, and ship new features.</li>
+					<li>Conducted code reviews and implemented best practices, improving code quality.</li>
+					<li>Participated in daily stand-ups and sprint planning, contributing to Agile workflows.</li>
+					<li>Implemented structured strategies for conducting root cause analysis, enabling the team to quickly diagnose and resolve software issues. This reduced downtime and improved the overall stability of the systems, ensuring faster delivery of bug fixes and enhancements.</li>
+					<li>Established knowledge-sharing practices within the team to prevent loss of critical information. Developed systems for documenting and sharing key learnings, resulting in better collaboration and smoother onboarding for new team members.</li>
+					<li>Led initiatives to create open feedback mechanisms within the team, promoting continuous improvement and innovation. Adapted workflows and development processes to align with team strengths and evolving project needs, ensuring processes were always fit for purpose and never hindered progress.</li>
+					<li>Developed and maintained microservices using Java, Spring Boot, and Maven, ensuring high-quality, scalable code for core business applications.</li>
+					<li>Refactored and created apis for getting car details and generating quotes for motor insurance.</li>
+					<li>Primary developer in charge of maintaining payment gateway api</li>
+
+				</ul>
+			</div>
+	
+			<div class="experience-card aviva-intern">
+				<h3 class="experience-title">Intern - Aviva Insurance Ireland</h3>
+				<p class="experience-date"><strong class="experience-strong">March 2020 - September 2020</strong></p>
+				<ul class="experience-details margin-tb-30">
+					<li>Assisted in the development of internal tools, reducing manual work by 40%.</li>
+					<li>Collaborated with senior engineers on various projects, gaining hands-on experience.</li>
+					<li>Participated in daily stand-ups and sprint planning, contributing to Agile workflows.</li>
+					<li>Gained experience with JavaScript, React, and Node.js.</li>
+				</ul>
 			</div>
 		</div>
-
-		<div class="column left"><a href=https://github.com/Jordan-Voss/4th-year-project-Barbell-and-body-tracking>
-			<h2>Barbell and Body Tracker</h2>
-			<img src="images/banner.jpeg">
-			</a>
-			<p>This project focuses on tracking the movement of a barbell and body parts
-				 during weightlifting exercises using image processing techniques. By analyzing
-				  video recordings, the system identifies the barbell and key body parts, 
-				  then calculates the barbell's velocity, path, and provides form improvement 
-				  tips to help prevent injuries.</p>
-			<p>The tech stack includes the Flask framework for ui with python backend and postgres database with OpenCV used for image processing and tracking bodyparts.
+	</section>
+	<section class="projects-section section">
+		<section class="projects-section section">
+			<div class="container container-projects">
+				<div class="row row-projects">
+					<div class="col-12">
+						<div class="projects-header">
+							<h3><b>Some of my Projects</b></h3>
+						</div>
+					</div><!-- col-12 -->
+				</div>
+				<div class="row row-projects">
+					<div class="col-md-4 col-sm-6 project-item">
+						<div class="project-card">
+							<img src="images/banner.jpeg" alt="Project 1" class="project-image">
+							<div class="project-info">
+								<h4>Barbell and Body Tracker</h4>
+								<p>This project focuses on tracking the movement of a barbell and body parts
+									during weightlifting exercises using image processing techniques. By analyzing
+									video recordings, the system identifies the barbell and key body parts, 
+									then calculates the barbell's velocity, path, and provides form improvement 
+									tips to help prevent injuries.</p>
+								<p>The tech stack includes the Flask python framework and PostgreSQL database with OpenCV used for image processing and tracking body parts. Javascript is used for recording video in browser, and HTML and CSS for the UI</p>
+								<p>I used AWS S3 buckets for video and file storage</p>
+								<p>For testing I had python unit tests using pytest, Gherkin for behaviour driven development testing and browserstack automation testing for testing copatibility across difference browsers.</p>
+								<p>I used gitlab for the source code management with gitlab pipelines for automated running of tests and deployment to heroku testing and production environments</p>
+								<p>Had a jenkins instance running on a raspberry pi and forwarded ports on my router to access the builds outside of my network to work both in college and at home</p>
+								<div class="tech-logos">
+									<img src="images/html.png" alt="HTML" class="tech-logo">
+									<img src="images/css.png" alt="CSS" class="tech-logo">
+									<img src="images/js.png" alt="JavaScript" class="tech-logo">
+									<img src="images/python.png" alt="Python" class="tech-logo">
+									<img src="images/postgres.png" alt="PostgreSQL" class="tech-logo">
+									<img src="images/opencv.png" alt="OpenCV" class="tech-logo">
+								</div>
+								<a href="https://example.com/project1" class="project-link" target="_blank">View Project in GitHub <i class="ion-social-github"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 project-item">
+						<div class="project-card">
+							<img src="images/project2.jpg" alt="Project 2" class="project-image">
+							<div class="project-info">
+								<h4>Project Title 2</h4>
+								<p>Short description of the project.</p>
+								<div class="tech-logos">
+									<img src="images/logo1.png" alt="Tech 1" class="tech-logo">
+									<img src="images/logo2.png" alt="Tech 2" class="tech-logo">
+									<img src="images/logo3.png" alt="Tech 3" class="tech-logo">
+								</div>
+								<a href="https://example.com/project2" class="project-link" target="_blank">View Project</a>
+							</div>
+						</div>
+					</div>
 				
-			</p>
-		</div>
-		
-		<div class="column left"><a href=https://github.com/Jordan-Voss/4th-year-project-Barbell-and-body-tracking>
-			<h2>Odyssey Strength Website</h2>
-			<img src="images/odyssey.png" style="background-color: black; height: 40%;">
-			</a>
-			<p>Currently working on a website for my powerlifting team which is created using react native with supabase. Hosted in aws with Jenkins for CI/CD running on a raspberry pi.</p>
-			<p>This is currently unavailable to the public</p>
-		</div>
-			
-		</div>
-		</div>
-
-
-<!-- <div class="row">
-	<div class="col-sm-6 col-md-6 col-lg-3">
-		<div class="radial-prog-area margin-b-30">
-			<div class="radial-progress" data-prog-percent=".76">
-				<div></div>
-				<h6 class="progress-title">Python</h6>
+				</div>
 			</div>
-		</div></div>
+		</section>
+	</section>
 
-
-	<div class="col-sm-6 col-md-6 col-lg-3">
-		<div class="radial-prog-area margin-b-30">
-			<div class="radial-progress" data-prog-percent=".65">
-				<div></div>
-				<h6 class="progress-title">Java</h6>
-			</div>
-		</div></div>
-
-	<div class="col-sm-6 col-md-6 col-lg-3">
-		<div class="radial-prog-area margin-b-30">
-			<div class="radial-progress" data-prog-percent=".67">
-				<div></div>
-				<h6 class="progress-title">SQL</h6>
-			</div>
-		</div></div> -->
-
-<!--	<div class="col-sm-6 col-md-6 col-lg-3">
-		<div class="radial-prog-area margin-b-50">
-			<div class="radial-progress" data-prog-percent=".97">
-				<div></div>
-				<h6 class="progress-title"></h6>
-			</div>
-		</div><!- radial-prog-area->
-	</div><!- col-sm-6-->
-
-</div><!-- row -->
-</div><!-- col-sm-8 -->
-</div><!-- row -->
-</div><!-- container -->
-</section><!-- about-section -->
-
-	<footer>
-		<p class="copyright">
-<script></script>	Thanks for Checking out my Website. Feel free to connect with me on linkedin, or contact me by phone or email.</a>
-
-		</p>
-
-
-	</footer>
 
 
 	<!-- SCIPTS -->

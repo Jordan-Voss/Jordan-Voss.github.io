@@ -31,8 +31,60 @@
 /* ---------------------------------
 1. PRIMARY STYLES
 --------------------------------- */
+.intro-section, .about-section {
+    width: 100%;
+    padding: 20px 0; /* Add some padding for spacing */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
 
-html{ font-size: 100%; height: 100%; overflow-x: hidden; margin: 0px;  padding: 0px; touch-action: manipulation; }
+/* Ensure the container takes the full width of the viewport */
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px; /* Add some padding for spacing */
+    margin: 0 auto; /* Center the container */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Additional styles for headings and paragraphs */
+.heading h1, .heading h2 {
+    margin: 0 0 10px;
+}
+
+.heading p {
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure HTML and body take the full width and height */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Ensure sections take the full width of the viewport */
+section {
+    width: 100%;
+
+    /* padding: 20px 0; Add some padding for spacing */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Ensure the container takes the full width of the viewport */
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px; /* Add some padding for spacing */
+    margin: 0 auto; /* Center the container */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
 .experience-section {
     padding-top: 5%;
     padding-bottom: 5%;
@@ -52,9 +104,9 @@ html{ font-size: 100%; height: 100%; overflow-x: hidden; margin: 0px;  padding: 
     flex-direction: column;
     align-items: center;
     text-align: center;
-
     width: 100%; /* Ensure the figure takes the full width of the container */
 }
+
 .about-me-caption {
     margin-top: 10px;
     font-size: 0.9em;
@@ -67,11 +119,13 @@ html{ font-size: 100%; height: 100%; overflow-x: hidden; margin: 0px;  padding: 
     object-fit: contain; /* Ensure the image scales correctly within its container */
 	border-radius: 15px;
 }
-body{ font-size: 16px; font-family: 'Poppins', serif; width: 100%; height: 100%; margin: 0; font-weight: 400;
+
+body{ font-size: 16px; font-family: Poppins, serif; width: 100%; height: 100%; margin: 0; font-weight: 400;
 	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-wrap: break-word;
 	color: #333; }
 
 h1, h2, h3, h4, h5, h6, p, a, span,  img, inpot, button{ margin: 0; padding: 0; }
+
 * {
 	box-sizing: border-box;
   }
@@ -81,17 +135,20 @@ h1, h2, h3, h4, h5, h6, p, a, span,  img, inpot, button{ margin: 0; padding: 0; 
 	float: left;
 	padding: 10px;
 	width: 100%;
+
 	/* height: 300px; Should be removed. Only for demonstration */
   }
+
   /* p {
 	  color: #fff;
   } */
   
   .left, .right {
-	  
 	color: #ddd;
+
 	/* width: 33%; */
   }
+
   p.column.left {
 	  color: #ddd;
   }
@@ -99,12 +156,15 @@ h1, h2, h3, h4, h5, h6, p, a, span,  img, inpot, button{ margin: 0; padding: 0; 
   .middle {
 	/* width: 33%; */
   }
+
   .row2{
 	  width: 100%;
   }
+
   .col-sm-8{
 	  width: 100%;
   }
+
   .container2 {
 	  width: 100%;
   }
@@ -114,7 +174,7 @@ h1, h2, h3, h4, h5, h6, p, a, span,  img, inpot, button{ margin: 0; padding: 0; 
   }
   
   /* Clear floats after the columns */
-  .row2:after {
+  .row2::after {
 	content: "";
 	display: table;
 	clear: both;
@@ -122,20 +182,21 @@ h1, h2, h3, h4, h5, h6, p, a, span,  img, inpot, button{ margin: 0; padding: 0; 
 
 h1,h2,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
 
-h1,h2,h3{ font-family: 'Poppins', cursive; }
+h1,h2,h3{ font-family: Poppins, cursive; }
 .social{ list-style: none; display: inline-block; }
 
 p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; }
 
 h1{ font-size: 4em; line-height: 1; }
-h2{ font-size: 2.2em; line-height: 1.1; }
+
+h2{ font-size: 2.2em; line-height: 1.1; 
+}
 h3{ font-size: 1.8em; }
 h4{ font-size: 1.3em; }
 h5{ font-size: 1em; }
 h6{ font-size: .9em; letter-spacing: 1px; }
 
-a, button{ display: inline-block; text-decoration: none; color: inherit; line-height: 1;
-	-webkit-transition: all .25s ease-in-out; transition: all .25s ease-in-out; }
+a, button{ display: inline-block; text-decoration: none; color: inherit; line-height: 1; transition: all .25s ease-in-out; }
 
 a:focus, a:active, a:hover,
 button:focus, button:active, button:hover,
@@ -153,7 +214,7 @@ button{ outline: 0; border: 0; background: none; cursor: pointer; }
 
 .icon{ font-size: 1.1em; display: inline-block; line-height: inherit; }
 
-[class^="icon-"]:before, [class*=" icon-"]:before{ line-height: inherit; }
+[class^="icon-"]::before, [class*=" icon-"]::before{ line-height: inherit; }
 
 b.max-bold{ font-weight: 700; }
 
@@ -163,11 +224,11 @@ b.max-bold{ font-weight: 700; }
 2. COMMONS FOR PAGE DESIGN
 --------------------------------- */
 
-.section{ padding: 100px 0 50px; }
+/* .section{ padding: 100px 0 50px; } */
 
 .section .heading{ margin-bottom: 60px; }
 
-.section .heading:before{ content:''; height: 10px; width: 50px; border-radius: 5px;
+.section .heading::before{ content:''; height: 10px; width: 50px; border-radius: 5px;
 	margin-bottom: 20px; display: block; background: #7BB4C0; }
 
 .margin-t-10{ margin-top: 10px; }
@@ -214,7 +275,9 @@ header .info .icon{ float: left; font-size: 30px; }
 
 .header .info .right-area {
     margin-left: 10px; /* Adjust as needed for spacing */
+
 /* } */
+
 /* 
 .header .downlad-btn {
     margin-top: 10px;
@@ -226,6 +289,7 @@ header .downlad-btn{ padding: 15px 30px; border-radius: 4px; float: right; margi
 
 header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: translateY(-4px); }
  */
+
 /* Add this to your styles.css file */
 
 header {
@@ -261,24 +325,27 @@ header .info .right-area {
 .container-btn {
     position: absolute;
 	right: 10px;
+
     /* transform: translateX(-50%); Center the button horizontally */
-    background-color: rgba(76, 78, 82, 0); /* Set background color with opacity */
+    background-color: rgb(76 78 82 / 0%); /* Set background color with opacity */
     display: flex;
     justify-content: center; /* Center the button horizontally */
     align-items: center;
     padding: 10px; /* Add some padding around the button */
     z-index: 5; /* Ensure the button is above the intro image */
 }
+
 .downlad-btn {
     z-index: 100;
     padding: 15px 30px;
     border-radius: 4px;
-    box-shadow: inset 0 0px 4px rgba(0, 0, 0, .3);
+    box-shadow: inset 0 0 4px rgb(0 0 0 / 30%);
     background: #7BB4C0;
     color: #fff;
     text-decoration: none;
     display: inline-block; /* Ensure the button is displayed inline */
 }
+
 .downlad-btn a {
     color: #fff; /* Ensure the text color remains white */
 }
@@ -289,24 +356,37 @@ header .info .right-area {
 
 .downlad-btn:hover {
     color: #fff; /* Ensure the text color remains white on hover */
-    -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
 }
 
 .downlad-btn:active {
     color: #fff; /* Ensure the text color remains white when active */
 }
+
 /* ---------------------------------
 4. INTRO SECTION
 --------------------------------- */
 
-.intro-section{ padding-top: 200px; position: relative; background-size: cover;
-	z-index: 1; background-image: url(../images/bgd.jpg); }
+.intro-section{ 
+	padding-top: 200px;
+	display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    box-sizing: border-box;
+	 position: relative; 
+	 background-size: cover;
+	z-index: 1; 
+	background-image: url("../images/bgd.jpg"); }
 
-.intro-section:before{ content:''; z-index: -1; position: absolute; top: 0; bottom: 0; left: 0;
-	right: 0; background: rgba(0,0,0, .2); }
+	.container-about {
+		width: 100%;
+		max-width: 1200px; /* Optional: Set a max-width for better readability */
+		padding: 0 15px; /* Optional: Add some padding for spacing */
+		box-sizing: border-box; /* Include padding and border in the element's total width and height */
+	}
+.intro-section::before{ content:''; z-index: -1; position: absolute; inset: 0; background: rgb(0 0 0 / 20%); }
 
-.intro-section:after{ content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+.intro-section::after{ content: ''; position: absolute; bottom: 0; left: 0; right: 0;
 	height: 150px; z-index: -1; background: #fff; }
 
 .intro{ padding: 0 20px; margin-top: 100px; text-align: center; background: #fff; }
@@ -319,12 +399,9 @@ header .info .right-area {
 .intro .social-icons > li > a{ height: 35px; line-height: 35px; width: 35px; border-radius: 20px;
 	overflow: hidden; z-index: 1; position: relative; margin: 0 5px 5px; background: #2E3037; color: #fff;}
 
-.intro .social-icons > li > a:after{ content: ''; position: absolute; bottom: 0; left: 0; right: 0;
-	top: 0; z-index: -1; border-radius: 20px; background: #7BB4C0;
-	-webkit-transition: all .2s ease; transition: all .2s ease;
-	-webkit-transform: scale(0); transform: scale(0); }
+.intro .social-icons > li > a::after{ content: ''; position: absolute; inset: 0; z-index: -1; border-radius: 20px; background: #7BB4C0; transition: all .2s ease; transform: scale(0); }
 
-.intro .social-icons > li > a:hover:after{ -webkit-transform: scale(1); transform: scale(1); }
+.intro .social-icons > li > a:hover::after{ transform: scale(1); }
 
 
 /* ---------------------------------
@@ -359,7 +436,7 @@ header .info .right-area {
 .radial-progress .progressbar-text{ font-size: 2.2em; font-weight: 500;
 	padding-bottom: 25px!important; color:#7BB4C0!important; }
 
-.radial-progress .progressbar-text:after{ content:'%';color: #7BB4C0; }
+.radial-progress .progressbar-text::after{ content:'%';color: #7BB4C0; }
 
 .radial-progress .progress-title{ position: absolute; top: 50%; left: 50%; width: 100%;
 	letter-spacing: 0; text-align: center; transform: translate(-50%, 15px); color: #7BB4C0; }
@@ -373,16 +450,18 @@ header .info .right-area {
 
 .experience .list > li{ display: block; position: relative; margin-bottom: 10px; padding-left: 20px; }
 
-.experience .list > li:before{ content: ''; position: absolute; top: 50%; left: 0; height: 10px;
+.experience .list > li::before{ content: ''; position: absolute; top: 50%; left: 0; height: 10px;
 	width: 10px; margin-top: -5px; display: block; border-radius: 10px; border: 2px solid #fff; }
 
-
-
+	.heading h3 {
+		padding-right: 30px;
+		white-space: nowrap; /* Prevent the text from wrapping */
+	}
 .experience-section{ background: #4C4E52; color: #fff; }
 
 .experience .list > li{ display: block; position: relative; margin-bottom: 10px; padding-left: 20px; }
 
-.experience .list > li:before{ content: ''; position: absolute; top: 50%; left: 0; height: 10px;
+.experience .list > li::before{ content: ''; position: absolute; top: 50%; left: 0; height: 10px;
 	width: 10px; margin-top: -5px; display: block; border-radius: 10px; border: 2px solid #fff; }
 
 
@@ -392,18 +471,19 @@ header .info .right-area {
 
 .education-wrapper{ position: relative; }
 
-.education-wrapper:after{ content:''; position: absolute; top: 8px; bottom: 0; left: -51px;
+.education-wrapper::after{ content:''; position: absolute; top: 8px; bottom: 0; left: -51px;
 	width: 2px; background: #7BB4C0; }
 
 .education-wrapper .education{ position: relative; }
 
-.education-wrapper .education:after{ content:''; position: absolute; top: 8px; left: -58px; width: 16px;
+.education-wrapper .education::after{ content:''; position: absolute; top: 8px; left: -58px; width: 16px;
 	height: 16px; border-radius: 10px; z-index: 1;
-	box-shadow: 0 0 0 8px rgba(123,180,192, .4); background: #7BB4C0; }
+	box-shadow: 0 0 0 8px rgb(123 180 192 / 40%); background: #7BB4C0; }
 
 .col-sm-4{
 	z-index: 100;
 }
+
 /* ---------------------------------
 9. COUNTER SECTION
 ---------------------------------
@@ -423,7 +503,7 @@ header .info .right-area {
 
 /* RADIAL PREOGRESS SECTION */
 
-
+/* 
 .radial-progress{ position: relative; max-width: 200px; margin: 0 auto; color: #7BB4C0; }
 
 .radial-progress .progressbar-text{ font-size: 2.2em; font-weight: 500;
@@ -432,14 +512,13 @@ header .info .right-area {
 .radial-progress .progressbar-text:after{ content:'%';color: #7BB4C0; }
 
 .radial-progress .progress-title{ position: absolute; top: 50%; left: 50%; width: 100%;
-	letter-spacing: 0; text-align: center; transform: translate(-50%, 15px); color: #7BB4C0; }
+	letter-spacing: 0; text-align: center; transform: translate(-50%, 15px); color: #7BB4C0; } */
 
 	/* ---------------------------------
 	10. contact
 	--------------------------------- */
 	section#contact {
 	  background-color: #212529;
-
 	  background-repeat: no-repeat;
 	  background-position: center;
 	}
@@ -449,9 +528,11 @@ header .info .right-area {
 		margin-bottom: 3%;
 	  color: #fff;
 	}
+
 button#sentmessagebtn{
 	color: #4C4E52;
 }
+
 	section#contact .form-group {
 	  margin-bottom: 25px;
 	}
@@ -471,33 +552,33 @@ button#sentmessagebtn{
 
 	section#contact .form-control:focus {
 	  border-color: #4C4E52;
-	  -webkit-box-shadow: none;
 	  box-shadow: none;
 	}
 
-	section#contact ::-webkit-input-placeholder {
+	section#contact ::input-placeholder {
 	  font-weight: 700;
 	  color: #ced4da;
-	  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 	}
 
-	section#contact :-moz-placeholder {
+	section#contact :placeholder {
 	  font-weight: 700;
 	  color: #ced4da;
-	  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 	}
 
-	section#contact ::-moz-placeholder {
+	section#contact ::placeholder {
 	  font-weight: 700;
 	  color: #ced4da;
-	  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 	}
 
-	section#contact :-ms-input-placeholder {
+	section#contact :input-placeholder {
 	  font-weight: 700;
 	  color: #ced4da;
-	  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 	}
+
 /* ---------------------------------
 11. FOOTER
 --------------------------------- */

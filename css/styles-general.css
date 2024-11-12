@@ -1,0 +1,90 @@
+/* ---------------------------------
+1. Fonts
+--------------------------------- */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body{ font-size: 16px; font-family: Poppins, serif; width: 100%; height: 100%; margin: 0; font-weight: 400;
+	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-wrap: break-word;
+	color: #333; }
+/* Header styles */
+header {
+    background-color: #4C4E52;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+    width: 100%; /* Ensure the header takes the full width */
+}
+
+h1,h2,h3,h4,h5,h6{ 
+    line-height: 1.5; font-weight: inherit;
+ }
+
+h1,h2,h3{
+     font-family: Poppins, cursive;}
+
+.social{
+     list-style: none; display: inline-block; 
+}
+
+p{
+    line-height: 1.6; font-size: 1.05em; font-weight: 400;
+}
+
+h1{
+    font-size: 4em; line-height: 1;
+}
+
+h2{
+    font-size: 2.2em; line-height: 1.1;
+}
+
+h3{
+    font-size: 1.8em;
+}
+
+h4{
+    font-size: 1.3em;
+}
+
+h5{
+    font-size: 1em;
+}
+
+h6{
+    font-size: .9em; letter-spacing: 1px;
+}
+
+/* ---------------------------------
+2. Text Colors
+--------------------------------- */
+
+a, button{
+    display: inline-block; text-decoration: none; color: inherit; line-height: 1; transition: all .25s ease-in-out;
+}
+
+a:focus, a:active, a:hover,
+button:focus, button:active, button:hover,
+a b.light-color:hover{ 
+    text-decoration: none; color: #7BB4C0; 
+}
+
+button{
+     outline: 0; border: 0; background: none; cursor: pointer; 
+    }
+
+.icon{
+    font-size: 1.1em; display: inline-block; line-height: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px; /* Add some padding for spacing */
+    margin: 0 auto; /* Center the container */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
