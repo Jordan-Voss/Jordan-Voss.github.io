@@ -473,8 +473,9 @@ li .social {
 
 .experience-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: stretch; /* Ensure all cards have the same height */
+    align-items: flex-start; /* Align items to the top */
     width: 100%;
     padding: 0 5%;
 }
@@ -525,12 +526,16 @@ li .social {
 
 /* Specific styles for the podium effect */
 .aviva-software-engineer {
+    order: 2; /* Ensure the middle card is in the center */
     margin-top: -20px; /* Raise the middle card */
 }
 
-.aviva-part-time-developer,
+.aviva-part-time-developer {
+    order: 1; /* Ensure the left card is on the left */
+}
+
 .aviva-intern {
-    margin-top: 20px;
+    order: 3; /* Ensure the right card is on the right */
 }
 
 /* Media query for smaller screens */
@@ -548,6 +553,7 @@ li .social {
     .aviva-software-engineer,
     .aviva-part-time-developer,
     .aviva-intern {
+        order: initial; /* Reset order for smaller screens */
         margin-top: 0; /* Reset margin for smaller screens */
     }
 }
