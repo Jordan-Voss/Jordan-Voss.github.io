@@ -465,6 +465,7 @@ li .social {
 /* General styles for the Experience section */
 /* General styles for the Experience section */
 /* General styles for the Experience section */
+/* General styles for the Experience section */
 .exp-section {
     background: #ffffff; /* Set background color to white */
     color: #333; /* Set text color for better visibility */
@@ -550,7 +551,11 @@ li .social {
         margin-bottom: 30px;
     }
 
-    .aviva-software-engineer,
+    .aviva-software-engineer {
+        order: -1; /* Move the middle card to the top */
+        margin-top: 0; /* Reset margin for smaller screens */
+    }
+
     .aviva-part-time-developer,
     .aviva-intern {
         order: initial; /* Reset order for smaller screens */
